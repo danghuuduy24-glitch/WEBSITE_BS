@@ -1,0 +1,14 @@
+.page__footer{
+    background:#1b2a20;
+    color:#dce3d0;
+    text-align:center;
+    padding:25px;
+}
+.footer-icon{
+    color:#d9b97a;
+    font-size:20px;
+    margin:0 10px;
+}
+.footer-icon:hover{
+    color:white;
+}
