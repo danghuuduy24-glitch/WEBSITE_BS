@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - Thư Quán</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/giohang.css">
+</head>
+<body class="page">
+    <header class="page__header">
+        <div class="header__topbar">
+            <i class="fa fa-book header-book-icon"></i>
+            <div>
+                <div class="header__title">THƯ <em>QUÁN</em></div>
+                <div class="header__subtitle">Hiệu sách trực tuyến</div>
+            </div>
+        </div>
+
+        <nav class="header__nav">
+            <a href="trangchu.html" class="nav__link">Trang Chủ</a>
+            <a href="trangbanhang.html" class="nav__link">Sản Phẩm</a>
+            <a href="giohang.html" class="nav__link nav__link--active">Giỏ Hàng</a>
+            <a href="dathang.html" class="nav__link">Đặt Hàng</a>
+            <a href="login.html" class="nav__link">Đăng Nhập</a>
+            <a href="dangky.html" class="nav__link">Đăng Ký</a>
+
+            <div class="nav__search">
+                <div class="search__form">
+                    <a href="trangbanhang.html" class="nav__link">Tiếp tục mua sách</a>
+                    <a href="giohang.html" class="cart-link" aria-label="Mở giỏ hàng">
+                        <i class="fa fa-shopping-cart form__icon-cart"></i>
+                        <span class="no-ordered-items">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <h1 class="cart-title">Giỏ hàng của bạn</h1>
+
+        <div class="table-wrapper">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Hình ảnh</th>
+                        <th>Tên sách</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody id="danhSachGioHang"></tbody>
+            </table>
+        </div>
+
+        <div class="cart-total">
+            <h2>
+                Tổng cộng:
+                <span id="nhanTongTien">0</span> đ
+            </h2>
+
+            <button type="button" id="nutXoaTatCa" class="btn-clear">
+                Xóa tất cả
+            </button>
+
+            <a href="dathang.html" id="nutDatHang" class="btn-order">
+                Đặt hàng ngay
+            </a>
+        </div>
+    </main>
+
+    <footer class="page__footer">
+        <p>
+            © 2025 Bản quyền thuộc về Thư Quán
+            <br><br>
+            <a href="#"><i class="fa fa-facebook footer-icon"></i></a>
+            <a href="#"><i class="fa fa-instagram footer-icon"></i></a>
+            <a href="#"><i class="fa fa-twitter footer-icon"></i></a>
+        </p>
+    </footer>
+
+    <script src="js/giohang.js"></script>
+</body>
+</html>

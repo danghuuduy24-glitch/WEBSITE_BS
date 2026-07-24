@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm - Thư Quán</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/trangbanhang.css">
+</head>
+
+<body class="page">
+    <header class="page__header">
+        <div class="header__topbar">
+            <i class="fa fa-book header-book-icon"></i>
+            <div>
+                <div class="header__title">THƯ <em>QUÁN</em></div>
+                <div class="header__subtitle">Hiệu sách trực tuyến</div>
+            </div>
+        </div>
+
+        <nav class="header__nav">
+    <a href="trangchu.html" class="nav__link">Trang Chủ</a>
+    <a href="trangbanhang.html" class="nav__link nav__link--active">Sản phẩm</a>
+    <a href="giohang.html" class="nav__link">Giỏ Hàng</a>
+    <a href="dathang.html" class="nav__link">Đặt Hàng</a>
+
+    <!-- Chưa đăng nhập -->
+    <div id="authentication">
+        <a href="login.html" class="nav__link">Đăng Nhập</a>
+        <a href="dangky.html" class="nav__link">Đăng Ký</a>
+    </div>
+
+    <!-- Đã đăng nhập -->
+    <div id="user-info" class="hidden">
+        <span id="principal"></span>
+        <a href="#" id="logout" class="nav__link">Đăng xuất</a>
+    </div>
+
+    <div class="nav__search">
+        <div class="search__form">
+
+            <input
+                type="text"
+                id="oTimKiem"
+                class="form__input-text"
+                placeholder="Tìm tên sách, tác giả..."
+            >
+
+            <button type="button" id="nutTimKiem" class="form__icon-search" aria-label="Tìm kiếm">
+                <i class="fa fa-search"></i>
+            </button>
+
+            <a href="giohang.html" class="cart-link">
+                <i class="fa fa-shopping-cart form__icon-cart"></i>
+                <span class="no-ordered-items">0</span>
+            </a>
+
+        </div>
+    </div>
+
+</nav>
+    </header>
+    <main class="page-main">
+
+        <article class="item" data-category="thieunhi">
+            <img class="item-image" src="images/Sach1.jpg" alt="product 1">
+            <div class="item-info">
+                <p class="item-id" hidden>001</p>
+                <h3 class="item-title">Truyện Aladanh và cây đèn thần</h3>
+                <p class="item-price">55000</p>
+            </div>
+            <button type="button" class="add-cart">THÊM VÀO GIỎ HÀNG</button>
+        </article>
+
+        <article class="item" data-category="thieunhi">
+            <img class="item-image" src="images/Sach2.jpg" alt="product 2">
+            <div class="item-info">
+                <p class="item-id" hidden>002</p>
+                <h3 class="item-title">Truyện Alibaba và 40 tên cướp</h3>
+                <p class="item-price">57000</p>
+            </div>
+            <button type="button" class="add-cart">THÊM VÀO GIỎ HÀNG</button>
+        </article>
+
+        <article class="item" data-category="vanhoc">
+            <img class="item-image" src="images/Sach3.jpg" alt="product 3">
+            <div class="item-info">
+                <p class="item-id" hidden>003</p>
+                <h3 class="item-title">Vợ nhặt</h3>
+                <p class="item-price">56000</p>
+            </div>
+            <button type="button" class="add-cart">THÊM VÀO GIỎ HÀNG</button>
+        </article>
+
+        <article class="item" data-category="vanhoc">
+            <img class="item-image" src="images/Sach4.jpg" alt="product 4">
+            <div class="item-info">
+                <p class="item-id" hidden>004</p>
+                <h3 class="item-title">Nhà giả kim</h3>
+                <p class="item-price">54000</p>
+            </div>
+            <button type="button" class="add-cart">THÊM VÀO GIỎ HÀNG</button>
+        </article>
+
+        <article class="item" data-category="kinhte">
+            <img class="item-image" src="images/Sach5.jpg" alt="product 5">
+            <div class="item-info">
+                <p class="item-id" hidden>005</p>
+                <h3 class="item-title">Kinh tế số</h3>
+                <p class="item-price">60000</p>
+            </div>
+            <button type="button" class="add-cart">THÊM VÀO GIỎ HÀNG</button>
+        </article>
+
+        <article class="item" data-category="kinhte">
+            <img class="item-image" src="images/Sach6.jpg" alt="product 6">
+            <div class="item-info">
+                <p class="item-id" hidden>006</p>
+                <h3 class="item-title">Doanh nghiệp của thế kỉ 21</h3>
+                <p class="item-price">50000</p>
+            </div>
+            <button type="button" class="add-cart">THÊM VÀO GIỎ HÀNG</button>
+        </article>
+
+        <article class="item" data-category="truyentranh">
+            <img class="item-image" src="images/Sach7.jpg" alt="product 7">
+            <div class="item-info">
+                <p class="item-id" hidden>007</p>
+                <h3 class="item-title">Conan</h3>
+                <p class="item-price">52000</p>
+            </div>
+            <button type="button" class="add-cart">THÊM VÀO GIỎ HÀNG</button>
+        </article>
+
+        <article class="item" data-category="lichsu">
+            <img class="item-image" src="images/Sach8.jpg" alt="product 8">
+            <div class="item-info">
+                <p class="item-id" hidden>008</p>
+                <h3 class="item-title">Đại Việt sử ký toàn thư</h3>
+                <p class="item-price">55000</p>
+            </div>
+            <button type="button" class="add-cart">THÊM VÀO GIỎ HÀNG</button>
+        </article>
+
+        <article class="item" data-category="kinhte">
+            <img class="item-image" src="images/Sach9.jpg" alt="product 9">
+            <div class="item-info">
+                <p class="item-id" hidden>009</p>
+                <h3 class="item-title">Người giàu có nhất thành BABYLON</h3>
+                <p class="item-price">49000</p>
+            </div>
+            <button type="button" class="add-cart">THÊM VÀO GIỎ HÀNG</button>
+        </article>
+    </main>
+    <footer class="page__footer">
+        <p>
+            © 2025 Bản quyền thuộc về Thư Quán
+            <br><br>
+
+            <a href="#"><i class="fa fa-facebook footer-icon"></i></a>
+            <a href="#"><i class="fa fa-instagram footer-icon"></i></a>
+            <a href="#"><i class="fa fa-twitter footer-icon"></i></a>
+        </p>
+    </footer>
+    <script src="js/shop.js"></script>
+</body>
+</html>

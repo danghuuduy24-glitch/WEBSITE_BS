@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Thư Quán</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/trangchu.css">
+</head>
+
+<body>
+    <header class="page__header">
+        <div class="header__topbar">
+            <i class="fa fa-book header-book-icon" aria-hidden="true"></i>
+
+            <div>
+                <div class="header__title">THƯ <em>QUÁN</em></div>
+                <div class="header__subtitle">Hiệu sách trực tuyến</div>
+            </div>
+        </div>
+
+        <nav class="header__nav">
+            <a href="trangchu.html" class="nav__link nav__link--active">Trang Chủ</a>
+            <a href="trangbanhang.html" class="nav__link">Sản Phẩm</a>
+            <a href="giohang.html" class="nav__link">Giỏ Hàng</a>
+            <a href="dathang.html" class="nav__link">Đặt Hàng</a>
+
+            <div id="authentication">
+                <a href="login.html" class="nav__link">Đăng Nhập</a>
+                <a href="dangky.html" class="nav__link">Đăng Ký</a>
+            </div>
+
+            <div id="user-info" class="hidden">
+                <span id="principal"></span>
+                <a href="taikhoan.html" class="nav__link">Tài khoản</a>
+                <a href="#" id="logout" class="nav__link">Đăng xuất</a>
+            </div>
+
+            <div class="nav__search">
+                <div class="search__form">
+                    <input
+                        type="text"
+                        id="searchInput"
+                        class="form__input-text"
+                        placeholder="Tìm tên sách, tác giả...">
+
+                    <button
+                        type="button"
+                        id="searchButton"
+                        class="form__icon-search"
+                        aria-label="Tìm kiếm">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+
+                    <a href="giohang.html" class="cart-link" aria-label="Mở giỏ hàng">
+                        <i class="fa fa-shopping-cart form__icon-cart" aria-hidden="true"></i>
+                        <span class="no-ordered-items">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="header__banner">
+            <p class="banner__eyebrow">▱▱ HIỆU SÁCH TRỰC TUYẾN</p>
+
+            <h1 class="banner__title">
+                Mỗi quyển sách là một <br>
+                <em>chuyến phiêu lưu mới</em><br>
+                chờ bạn khám phá
+            </h1>
+
+            <p class="banner__desc">
+                Thư Quán tập hợp hơn 8.000 đầu sách được chọn lọc kỹ càng từ văn học,
+                kinh tế đến sách thiếu nhi. Cam kết 100% sách chính hãng, giao hàng tận nơi.
+            </p>
+
+            <a href="trangbanhang.html" class="banner__cta">Xem sản phẩm ngay</a>
+        </section>
+    </header>
+
+    <main class="page__main">
+        <section class="article__section about-section">
+            <h2 class="article__title">Giới Thiệu Thư Quán</h2>
+            <h3 class="section__title section__title--secondary">Chúng tôi là ai?</h3>
+
+            <img
+                src="images/hero-bookstore.jpg"
+                class="section__image section__image--float-left"
+                alt="Không gian bên trong Thư Quán">
+
+            <p class="section__content">
+                Thư Quán là hiệu sách trực tuyến được thành lập với mục tiêu mang những cuốn sách
+                chất lượng đến tay độc giả khắp cả nước một cách nhanh chóng và tiện lợi nhất.
+                Chúng tôi tin rằng sách không chỉ là thứ để đọc mà còn là người bạn đồng hành,
+                giúp mở ra những thế giới mới.
+            </p>
+        </section>
+
+        <section class="article__section">
+            <h2 class="article__title">Danh Mục Sách</h2>
+            <h3 class="section__title section__title--secondary">Những kệ sách bạn sẽ tìm thấy</h3>
+
+            <div class="section__div-categories">
+                <a href="trangbanhang.html?category=vanhoc" class="category-card category1">Văn Học</a>
+                <a href="trangbanhang.html?category=kinhte" class="category-card category2">Kinh Tế</a>
+                <a href="trangbanhang.html?category=thieunhi" class="category-card category3">Thiếu Nhi</a>
+                <a href="trangbanhang.html?category=kynang" class="category-card category4">Kỹ Năng Sống</a>
+                <a href="trangbanhang.html?category=truyentranh" class="category-card category5">Truyện Tranh</a>
+                <a href="trangbanhang.html?category=lichsu" class="category-card category6">Lịch Sử</a>
+            </div>
+        </section>
+
+        <section class="article__section">
+            <h2 class="article__title">Tại Sao Chọn Thư Quán</h2>
+
+            <div class="section__div-features">
+                <article class="feature-item">
+                    <h3>Giao hàng nhanh</h3>
+                    <p>Nhận sách trong 2–4 ngày.</p>
+                </article>
+
+                <article class="feature-item">
+                    <h3>Đổi trả dễ dàng</h3>
+                    <p>Hỗ trợ đổi trả khi sách lỗi.</p>
+                </article>
+
+                <article class="feature-item">
+                    <h3>Sách chính hãng</h3>
+                    <p>Cam kết sách có bản quyền.</p>
+                </article>
+
+                <article class="feature-item">
+                    <h3>Tích điểm</h3>
+                    <p>Nhận nhiều ưu đãi hấp dẫn.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page__footer">
+        <p>© 2025 Bản quyền thuộc về Thư Quán</p>
+
+        <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa fa-facebook footer-icon"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa fa-instagram footer-icon"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa fa-twitter footer-icon"></i></a>
+        </div>
+    </footer>
+
+    <script src="shop.js"></script>
+</body>
+</html>

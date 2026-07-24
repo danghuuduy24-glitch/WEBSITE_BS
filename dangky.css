@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.page-main {
+    width: 100%;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f0e4;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+}
+
+#registerForm {
+    padding: 35px;
+    border-top: 5px solid #b8863b;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+#registerForm h1 {
+    margin-bottom: 30px;
+    color: #3f5a45;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2a2620;
+    font-weight: bold;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+}
+
+.input-box input:focus {
+    border-color: #b8863b;
+}
+
+.password-box {
+    display: flex;
+}
+
+.password-box input {
+    flex: 1;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+}
+
+.password-box button {
+    width: 55px;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    color: white;
+    background-color: #b8863b;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.password-box button:hover {
+    background-color: #d9b97a;
+}
+
+#strength {
+    margin-top: 10px;
+    color: #555555;
+    font-size: 14px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.checkbox input {
+    width: 18px;
+    height: 18px;
+}
+
+.btn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: #3f5a45;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #b8863b;
+}
+
+.login-link {
+    margin-top: 20px;
+    color: #555555;
+    text-align: center;
+}
+
+.login-link a {
+    color: #3f5a45;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    color: #b8863b;
+}
+
+@media screen and (max-width: 768px) {
+    .page-main {
+        padding: 30px 15px;
+    }
+
+    #registerForm {
+        padding: 25px;
+    }
+
+    #registerForm h1 {
+        font-size: 26px;
+    }
+}

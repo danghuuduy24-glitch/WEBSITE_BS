@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký - Thư Quán</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/dangky.css">
+</head>
+<body class="page">
+
+<header class="page__header">
+    <div class="header__topbar">
+        <i class="fa fa-book header-book-icon"></i>
+        <div>
+            <div class="header__title">THƯ <em>QUÁN</em></div>
+            <div class="header__subtitle">Hiệu sách trực tuyến</div>
+        </div>
+    </div>
+
+    <nav class="header__nav">
+        <a href="trangchu.html" class="nav__link">Trang Chủ</a>
+        <a href="trangbanhang.html" class="nav__link">Sản Phẩm</a>
+        <a href="giohang.html" class="nav__link">Giỏ Hàng</a>
+        <a href="dathang.html" class="nav__link">Đặt Hàng</a>
+        <a href="login.html" class="nav__link">Đăng Nhập</a>
+        <a href="dangky.html" class="nav__link nav__link--active">Đăng Ký</a>
+
+        <div class="nav__search">
+            <div class="search__form">
+                <input type="text" class="form__input-text" placeholder="Tìm tên sách, tác giả...">
+                <button type="button" class="form__icon-search" aria-label="Tìm kiếm">
+                    <i class="fa fa-search"></i>
+                </button>
+                <a href="giohang.html" class="cart-link" aria-label="Mở giỏ hàng">
+                    <i class="fa fa-shopping-cart form__icon-cart"></i>
+                    <span class="no-ordered-items">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="page-main">
+    <div class="container">
+        <form id="registerForm" novalidate>
+            <h1>Đăng ký tài khoản</h1>
+
+            <div class="input-box">
+                <label for="fullname">Họ và tên</label>
+                <input type="text" id="fullname" placeholder="Nhập họ và tên">
+            </div>
+
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Nhập email">
+            </div>
+
+            <div class="input-box">
+                <label for="username">Tên đăng nhập</label>
+                <input type="text" id="username" placeholder="Nhập tên đăng nhập">
+            </div>
+
+            <div class="input-box">
+                <label for="password">Mật khẩu</label>
+                <div class="password-box">
+                    <input type="password" id="password" placeholder="Nhập mật khẩu">
+                    <button type="button" id="showPassword" aria-label="Hiện hoặc ẩn mật khẩu">👁</button>
+                </div>
+                <p id="strength">Độ mạnh mật khẩu: <span id="strengthText">Chưa nhập</span></p>
+            </div>
+
+            <div class="input-box">
+                <label for="confirmPassword">Nhập lại mật khẩu</label>
+                <input type="password" id="confirmPassword" placeholder="Nhập lại mật khẩu">
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="agree">
+                <label for="agree">Tôi đồng ý với điều khoản sử dụng</label>
+            </div>
+
+            <button type="submit" class="btn">Đăng ký</button>
+
+            <p class="login-link">
+                Đã có tài khoản? <a href="login.html">Đăng nhập</a>
+            </p>
+        </form>
+    </div>
+</main>
+
+<footer class="page__footer">
+    <p>
+        © 2025 Bản quyền thuộc về Thư Quán
+        <br><br>
+        <a href="#"><i class="fa fa-facebook footer-icon"></i></a>
+        <a href="#"><i class="fa fa-instagram footer-icon"></i></a>
+        <a href="#"><i class="fa fa-twitter footer-icon"></i></a>
+    </p>
+</footer>
+
+<script src="js/register.js"></script>
+</body>
+</html>
